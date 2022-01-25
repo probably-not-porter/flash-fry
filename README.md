@@ -1,5 +1,11 @@
-# flash fry
-Python script to absolutely destroy the quality of an image. Have fun kids.
+# Flash Fry
+Ever wanted to just absolutely ruin an image?
+
+Too much quality?
+
+Not sure what to do with all those pixels???
+
+Man have I got the tool for you. 
 <br><br><br>
 
 ### Control Image (Nothing run yet)

@@ -1,5 +1,4 @@
-import argparse
-import sys
+import argparse,sys,random
 from PIL import Image
 from PIL import ImageFilter
 
@@ -7,7 +6,10 @@ from PIL import ImageFilter
 def fry(target):
     
     x, y = target.size
-    target = target.resize((x//5,y),Image.ANTIALIAS)
+
+    if random.randint(0,1) == 0: target = target.resize((x // random.randint(2,7), y),Image.ANTIALIAS)
+    else: target = target.resize((x,y // random.randint(2,7) ),Image.ANTIALIAS)
+
     target = target.filter(ImageFilter.SHARPEN)
     target = target.resize((x,y),Image.ANTIALIAS)
 
